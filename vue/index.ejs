@@ -1,0 +1,12 @@
+<%- include('entete'); %>
+
+<!-- <h1> Voici mon moteur !!!</h1> -->
+<!-- <%- include ('pied');%> -->
+
+
+<h1>Bonjour :</h1>
+
+<% for(let i in nom){ %>
+<li>- <%= nom[i] %> </li>
+<% } %>
+<%- include('pied'); %>
