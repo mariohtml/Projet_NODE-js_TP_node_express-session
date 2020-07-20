@@ -37,7 +37,7 @@ app.get('/', function (req, res) {
     res.cookie("Miam", "Cookie dans les sac", { maxAge: 900000, httpOnly: true})
  //   res.writeHead(200,"content-type","text/html; charset=utf-8")
   //res.send('<form method="post" action="/" ><input name="nom" type="text" /><input type="submit" value="envoyer"/></form>')
-  res.render('index')
+  res.render('index',{nom:["marius","Nader","Voila le noms !!"]})
  // res.end()
 })
 
